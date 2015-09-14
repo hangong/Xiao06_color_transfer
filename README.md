@@ -6,6 +6,7 @@ Copyright 2015 Han Gong gong@fedoraproject.org, University of East Anglia
 
 
 Reference
+
 Xiao, Xuezhong, and Lizhuang Ma. "Color transfer in correlated color space." % In Proceedings of the 2006 ACM international conference on Virtual reality continuum and its applications, pp. 305-309. ACM, 2006.
 
 MATLAB/Octave Code: see m/demo.m for demonstration.
