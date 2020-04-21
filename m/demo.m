@@ -1,7 +1,10 @@
-% Demostration of Xiao's Image Colour Transfer
+% Demonstration of Xiao's Image Colour Transfer
 
 % Copyright 2015 Han Gong <gong@fedoraproject.org>, University of East
 % Anglia.
+
+% Now ruggedised by T E Johnson (April 2020) to ensure consistent 
+% processing.
 
 % References:
 % Xiao, Xuezhong, and Lizhuang Ma. "Color transfer in correlated color
