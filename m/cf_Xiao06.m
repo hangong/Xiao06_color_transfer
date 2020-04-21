@@ -32,6 +32,17 @@ cov_t = cov(rgb_t');
 [U_s,A_s,~] = svd(cov_s);
 [U_t,A_t,~] = svd(cov_t);
 
+%**********************************************************
+% Processing modification by T E Johnson.
+% Set true (default) to implement ruggedisation processing.
+% Set false for standard (original) processing.
+ruggedisation=true;
+
+if (ruggedisation)
+    [U_t,A_t]=MatchColumns(U_s,U_t,A_t);
+end 
+%**********************************************************
+
 rgbh_s = [rgb_s;ones(1,size(rgb_s,2))];
 
 % compute transforms
