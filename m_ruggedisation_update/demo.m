@@ -5,7 +5,7 @@
 % Copyright 2015 Han Gong <gong@fedoraproject.org>, University of East
 % Anglia.
 
-% With an addition by (T E Johnson April 2020) to ensure consistent 
+% With an addition by T E Johnson (April 2020) to ensure consistent 
 % processing.
 
 % References:
