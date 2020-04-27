@@ -14,3 +14,10 @@ MATLAB/Octave Code: see m/demo.m for demonstration.
 Results:
 
 ![Demo of Colour Transfer](http://cs.bath.ac.uk/~hg299/cf_Xiao06.png)
+#        
+#        
+A further alternative implementation is provided under the directory *m_ruggedisation_update* in response to Issue #1.
+
+This incorporates additional code written and devised by T E Johnson. It enables an improved output image for input image pairs where the original processing method gave an unsatisfactory output.
+
+![Demo of Colour Transfer Processing with Ruggedisation](m_ruggedisation_update/Output.jpg?raw=true)

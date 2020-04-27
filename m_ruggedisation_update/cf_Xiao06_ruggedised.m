@@ -1,9 +1,16 @@
-function est_im = cf_Xiao06(source,target)
+function est_im = cf_Xiao06_ruggedised(source,target,ruggedised)
 %CF_XIAO computes Reinhard's image colour transfer
 %
-%   CF_XIAO(SOURCE,TARGET) returns the colour transfered source
+%   CF_XIAO(SOURCE,TARGET,ruggedised) returns the colour transfered source
 %   image SOURCE according to the target image TARGET.
 %
+
+%   If 'ruggedised' is set 'false' then, the original 'Xiao' method is 
+%   implemented as coded by Han Gong.
+
+%   If 'ruggedised' is set 'true' then further processing is performed in 
+%   addition to the basic processing. The additional processing has been
+%   devised and coded by Terry Johnson.
 
 %   References:
 %   Xiao, Xuezhong, and Lizhuang Ma. "Color transfer in correlated color
@@ -33,12 +40,8 @@ cov_t = cov(rgb_t');
 [U_t,A_t,~] = svd(cov_t);
 
 %**********************************************************
-% Processing modification by T E Johnson.
-% Set true (default) to implement ruggedisation processing.
-% Set false for standard (original) processing.
-ruggedisation=true;
-
-if (ruggedisation)
+% Processing modification Terry Johnson.
+if (ruggedised)
     [U_t,A_t]=MatchColumns(U_s,U_t,A_t);
 end 
 %**********************************************************
